@@ -10,7 +10,6 @@ public class CameraXFileProvider extends FileProvider{
     public boolean onCreate() {
         //noinspection ConstantConditions
         CameraXApp.INSTANCE.initApp((Application) getContext().getApplicationContext());
-        YuvUtils.init(getContext());
         return true;
     }
 
